@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>补光灯&手电筒</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="css/classic.min.css" />
+		<script src="js/pickr.min.js"></script>
+		<script src="js/javascript.js"></script>
+		<script src="js/jquery-3.7.1.min.js"></script>
+
+	</head>
+	<body>
+		<div class="background"></div>
+		<div id="choose">选择颜色</div>
+		<div id="decrease-brightness"
+			style="display:none; position: fixed; left: 10px; bottom: 130px; width: 80px; height: 40px; background: #ff6769; color: white; text-align: center; line-height: 40px; border-radius: 5px; cursor: pointer;">
+			降低亮度</div>
+		<div id="increase-brightness"
+			style="display:none; position: fixed; left: 120px; bottom: 130px; width: 80px; height: 40px; background: #ff6769; color: white; text-align: center; line-height: 40px; border-radius: 5px; cursor: pointer;">
+			增加亮度</div>
+		<div id="choose1">更改亮度</div>
+		<div id="more">more</div>
+		<div id="sidebar"
+			style="display:none; position: fixed; top: 0; left: 0; width: 200px; height: 100%; background: #ffffff; box-shadow: 2px 0 5px rgba(0,0,0,0.3); z-index: 1000;">
+			<div id="countdown-buttons" style="padding: 20px; font-weight: bold;">
+				<p>&nbsp;&nbsp;光源类型</p>
+				<button class="color-button" data-color="#FFDDC1" style="margin: 10px;">非常温暖</button>
+				<button class="color-button" data-color="#FFFFFF" style="margin: 10px;">日光</button>
+				<button class="color-button" data-color="#F0F8FF" style="margin: 10px;">清新白</button>
+				<button class="color-button" data-color="#ADD8E6" style="margin: 10px;">冰蓝</button>
+			</div>
+			<div id="countdown-buttons" style="padding: 20px; font-weight: bold;">
+				<p>&nbsp;&nbsp;倒计时</p>
+				<button class="countdown" data-time="300" style="margin: 10px;">5分钟</button>
+				<button class="countdown" data-time="1800" style="margin: 10px;">30分钟</button>
+				<button class="countdown" data-time="3600" style="margin: 10px;">60分钟</button>
+				<button class="countdown" data-time="7200" style="margin: 10px;">2小时</button>
+			</div>
+
+		</div>
+		<div id="overlay"
+			style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;">
+		</div>
+
+		<div id="custom-overlay"></div>
+		<div id="timer-display"
+			style="position: fixed; bottom: 100px; right: 20px; background: #000; color: #fff; padding: 10px; border-radius: 5px; display: none;">
+		</div>
+
+
+	</body>
+</html>
